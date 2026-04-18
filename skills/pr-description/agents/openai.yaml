@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Description"
+  short_description: "Generate reviewer-ready PR text from workflow artifacts"
+  default_prompt: "Generate a standalone PR description with summary, changes, why, validation evidence, risks, blockers, and rollback."

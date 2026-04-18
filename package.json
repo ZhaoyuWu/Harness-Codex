@@ -1,7 +1,6 @@
 {
   "name": "harness-codex-workflow",
-  "version": "0.2.0",
-  "private": true,
+  "version": "0.3.0",
   "description": "Two-agent engineering workflow skills with installable slash command templates.",
   "main": "promptm.js",
   "bin": {
@@ -12,10 +11,38 @@
     "typecheck": "node -e \"process.exit(0)\"",
     "lint": "node -e \"process.exit(0)\"",
     "test": "node -e \"process.exit(0)\"",
-    "test:perf": "node -e \"process.exit(0)\""
+    "test:perf": "node -e \"process.exit(0)\"",
+    "pr:generate": "powershell -ExecutionPolicy Bypass -File scripts/generate-pr-description.ps1"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "workflow",
+    "slash-commands",
+    "engineering",
+    "codex"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhaoyuWu/Harness-Codex.git"
+  },
+  "homepage": "https://github.com/ZhaoyuWu/Harness-Codex#readme",
+  "bugs": {
+    "url": "https://github.com/ZhaoyuWu/Harness-Codex/issues"
+  },
+  "files": [
+    "promptm.js",
+    "templates/",
+    "skills/",
+    "workflow/",
+    "scripts/",
+    "README.md",
+    ".codex-plugin/plugin.json"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT"
 }
