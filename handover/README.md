@@ -15,4 +15,6 @@ Use these files as the durable memory across generator and evaluator conversatio
 
 ## Shared Handover File
 
-1. `handover/public.md` for final combined summary across both roles
+1. `handover/public.md` as latest public handover index
+2. `handover/session-<session-id>.md` as current numbered public handover
+3. `handover/history/session-<session-id>.md` as immutable history copy

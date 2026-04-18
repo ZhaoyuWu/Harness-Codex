@@ -102,6 +102,8 @@ Slash command to skill mapping:
    `powershell -File scripts/workflow-loop.ps1 -Action nogo -StoryId US-001 -Reason "P1 regression" -Role evaluator`
 9. Run governance check:
    `powershell -File scripts/workflow-loop.ps1 -Action governance-check -Role orchestrator`
+10. Publish numbered public handover:
+   `powershell -ExecutionPolicy Bypass -File scripts/publish-public-handover.ps1 -NextOwner "generator"`
 
 ## Ralph-Like Automation Helpers
 
@@ -150,6 +152,29 @@ Print to terminal only:
 powershell -ExecutionPolicy Bypass -File scripts/generate-pr-description.ps1 -PrintOnly
 ```
 
+## Numbered Public Handover
+
+`public handover` is session-numbered and stored in two outputs:
+
+1. Session handover: `handover/session-<session-id>.md`
+2. Historical copy: `handover/history/session-<session-id>.md`
+
+Latest pointer remains:
+
+`handover/public.md`
+
+Generate public handover:
+
+```bash
+powershell -ExecutionPolicy Bypass -File scripts/publish-public-handover.ps1 -NextOwner "generator"
+```
+
+Or with npm:
+
+```bash
+npm run handover:public
+```
+
 ## Workflow Stop Conditions
 
 1. `COMPLETE`: all stories have `passes: true`
@@ -176,7 +201,8 @@ powershell -ExecutionPolicy Bypass -File scripts/generate-pr-description.ps1 -Pr
 8. Autopilot script: `scripts/story-autopilot.ps1`
 9. Archive script: `scripts/archive-task.ps1`
 10. PR generator script: `scripts/generate-pr-description.ps1`
-11. PR template: `.github/PULL_REQUEST_TEMPLATE.md`
+11. Public handover publisher: `scripts/publish-public-handover.ps1`
+12. PR template: `.github/PULL_REQUEST_TEMPLATE.md`
 
 Windows note:
 If script execution is blocked, run:

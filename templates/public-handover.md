@@ -26,7 +26,10 @@ description: "Publish shared summary only after all audit preconditions pass and
    - performance and principles passed
    - no open P0/P1
 3. If preconditions fail, return `Blocked` and stop.
-4. If pass, merge into `handover/public.md`.
+4. Allocate the next session id in `session-0001` format.
+5. Write session handover to `handover/session-<session-id>.md`.
+6. Write historical copy to `handover/history/session-<session-id>.md`.
+7. Update `handover/public.md` as latest index.
 
 ## Output Format
 
@@ -37,6 +40,14 @@ description: "Publish shared summary only after all audit preconditions pass and
 
 ## Preconditions Check
 [pass/blocked + reason]
+
+## Session ID
+[session-0001]
+
+## Output Files
+- handover/session-<session-id>.md
+- handover/history/session-<session-id>.md
+- handover/public.md
 
 ## Shared Summary
 [merged summary]
