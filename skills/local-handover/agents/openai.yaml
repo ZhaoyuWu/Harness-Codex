@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Handover"
+  short_description: "Write role-local phase summary to handover"
+  default_prompt: "Write a phase summary to the role-local handover file with completed scope, tests, risks, and next steps."

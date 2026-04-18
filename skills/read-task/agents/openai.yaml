@@ -1,0 +1,4 @@
+interface:
+  display_name: "Read Task"
+  short_description: "Load current role task from handover tasks"
+  default_prompt: "Read handover/tasks/task.md and my role branch task file, then summarize alignment, requirements, and missing inputs."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harness Intake"
+  short_description: "Turn ambiguous requests into a constrained build brief"
+  default_prompt: "Run harness intake on my request and output objective, scope, constraints, acceptance criteria, risks, and a task tree."

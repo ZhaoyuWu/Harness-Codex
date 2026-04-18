@@ -1,0 +1,4 @@
+interface:
+  display_name: "Read Handover"
+  short_description: "Load local and shared handover memory"
+  default_prompt: "Read handover/local and handover/public files and summarize decisions, risks, and pending tasks."

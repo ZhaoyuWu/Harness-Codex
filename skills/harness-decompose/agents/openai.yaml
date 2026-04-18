@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harness Decompose"
+  short_description: "Split goals into nested and verifiable engineering tasks"
+  default_prompt: "Decompose this engineering goal into L0, L1, and L2 tasks with dependencies, ownership, checkpoints, and escalation rules."

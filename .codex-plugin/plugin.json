@@ -1,0 +1,42 @@
+{
+  "name": "harness-engineering-skills",
+  "version": "0.1.0",
+  "description": "Two-agent engineering workflow skills for generator/evaluator development and audit handovers.",
+  "author": {
+    "name": "Zhaoyu Wu",
+    "email": "noreply@example.com",
+    "url": "https://github.com/ZhaoyuWu"
+  },
+  "homepage": "https://github.com/ZhaoyuWu/Harness-Codex",
+  "repository": "https://github.com/ZhaoyuWu/Harness-Codex",
+  "license": "MIT",
+  "keywords": [
+    "harness",
+    "engineering",
+    "skills",
+    "workflow",
+    "coding"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Harness Engineering Skills",
+    "shortDescription": "Generator and evaluator workflow with handover memory",
+    "longDescription": "Install this plugin to run a two-agent workflow: generator builds, evaluator audits, and both synchronize through local and public handover files.",
+    "developerName": "Zhaoyu Wu",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/ZhaoyuWu/Harness-Codex",
+    "privacyPolicyURL": "https://github.com/ZhaoyuWu/Harness-Codex",
+    "termsOfServiceURL": "https://github.com/ZhaoyuWu/Harness-Codex",
+    "defaultPrompt": [
+      "Start generator mode and prepare implementation context",
+      "Start evaluator mode and run ordered audits with tests",
+      "Publish shared handover summary after audits pass"
+    ],
+    "brandColor": "#0F766E",
+    "screenshots": []
+  }
+}

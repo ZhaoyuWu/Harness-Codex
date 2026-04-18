@@ -1,0 +1,4 @@
+interface:
+  display_name: "Public Handover"
+  short_description: "Publish shared summary from generator and evaluator"
+  default_prompt: "Check audit preconditions and only if passed merge local handovers into handover/public.md with final status, accepted tests, and next owner."

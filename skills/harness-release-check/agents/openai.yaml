@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harness Release Check"
+  short_description: "Run pre-release gates and shipping readiness checks"
+  default_prompt: "Run a release readiness check with preflight status, migration risk, observability, rollback plan, and a go or no-go decision."

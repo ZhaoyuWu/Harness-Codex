@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harness Implement"
+  short_description: "Deliver one scoped coding task with evidence"
+  default_prompt: "Implement this single scoped task, list changed files, run focused verification, and report residual risks."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generator"
+  short_description: "Prepare producer role and implementation context"
+  default_prompt: "Run generator mode: set producer role, sync git, read task first, freeze scope, read handover, and report readiness."

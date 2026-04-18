@@ -1,0 +1,4 @@
+interface:
+  display_name: "Read Tast"
+  short_description: "Compatibility alias for Read Task"
+  default_prompt: "Run read-task behavior and load role-specific task context."
