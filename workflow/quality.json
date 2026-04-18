@@ -1,0 +1,32 @@
+{
+  "coverageMin": 80,
+  "forbidP0P1": true,
+  "allowBypass": false,
+  "requiredChecks": [
+    "typecheck",
+    "lint",
+    "test"
+  ],
+  "commands": [
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "required": true
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "required": true
+    },
+    {
+      "name": "test",
+      "command": "npm run test",
+      "required": true
+    },
+    {
+      "name": "perf",
+      "command": "npm run test:perf",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+﻿{
+    "taskId":  "TASK-001",
+    "status":  "in_progress",
+    "iteration":  0,
+    "maxIterations":  10,
+    "consecutiveNoGo":  0,
+    "consecutiveNoGoLimit":  3,
+    "governance":  {
+                       "policyFile":  "workflow/policy.json",
+                       "qualityFile":  "workflow/quality.json",
+                       "lastQualityRun":  null
+                   },
+    "stories":  [
+                    {
+                        "id":  "US-001",
+                        "title":  "Example story",
+                        "priority":  1,
+                        "dependsOn":  [
+
+                                      ],
+                        "ownerRole":  "generator",
+                        "status":  "todo",
+                        "passes":  false,
+                        "notes":  "",
+                        "acceptance":  [
+                                           "Implementation matches parent task objective",
+                                           "Quality checks pass",
+                                           "No open P0/P1 findings"
+                                       ],
+                        "requiredEvidence":  [
+                                                 "implementation-summary",
+                                                 "test-results",
+                                                 "principles-check"
+                                             ],
+                        "evidence":  {
+                                         "implementation-summary":  {
+                                                                        "status":  "provided",
+                                                                        "value":  "done",
+                                                                        "updatedAt":  null
+                                                                    },
+                                         "test-results":  {
+                                                              "status":  "missing",
+                                                              "value":  "",
+                                                              "updatedAt":  null
+                                                          },
+                                         "principles-check":  {
+                                                                  "status":  "missing",
+                                                                  "value":  "",
+                                                                  "updatedAt":  null
+                                                              }
+                                     },
+                        "gateStatus":  "pending",
+                        "blockedReason":  "",
+                        "findings":  {
+                                         "P0":  0,
+                                         "P1":  0,
+                                         "P2":  0
+                                     },
+                        "quality":  {
+                                        "passedRequired":  false,
+                                        "results":  [
+
+                                                    ],
+                                        "lastRunAt":  null
+                                    }
+                    }
+                ]
+}

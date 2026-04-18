@@ -1,0 +1,58 @@
+{
+  "roles": {
+    "generator": {
+      "allowedActions": [
+        "start",
+        "record-evidence",
+        "run-quality",
+        "status",
+        "next"
+      ]
+    },
+    "evaluator": {
+      "allowedActions": [
+        "record-evidence",
+        "record-audit",
+        "approve-gate",
+        "reject-gate",
+        "nogo",
+        "status",
+        "next",
+        "governance-check"
+      ]
+    },
+    "orchestrator": {
+      "allowedActions": [
+        "status",
+        "next",
+        "start",
+        "pass",
+        "nogo",
+        "block",
+        "run-quality",
+        "record-evidence",
+        "record-audit",
+        "approve-gate",
+        "reject-gate",
+        "governance-check",
+        "init"
+      ]
+    }
+  },
+  "constraints": {
+    "maxFilesPerChange": 30,
+    "maxStoryIterations": 10
+  },
+  "blockedActions": [
+    "force-pass",
+    "skip-principles-check",
+    "public-handover-with-open-p0p1"
+  ],
+  "gates": {
+    "requireTaskAlignment": true,
+    "requirePrinciplesCheck": true,
+    "requireQualityPassed": true,
+    "requireNoOpenP0P1": true,
+    "failStoryOnRequiredQualityFail": true
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strategic Next"
+  short_description: "Pick the best next story by impact and readiness"
+  default_prompt: "Analyze stories, dependencies, risk, and effort, then recommend the highest-impact next story."

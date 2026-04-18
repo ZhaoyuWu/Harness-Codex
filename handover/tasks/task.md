@@ -4,6 +4,18 @@
 
 [Fill task id]
 
+## Story State Source
+
+`workflow/stories.json`
+
+## Governance Policy Source
+
+`workflow/policy.json`
+
+## Quality Policy Source
+
+`workflow/quality.json`
+
 ## Objective
 
 [Fill objective]

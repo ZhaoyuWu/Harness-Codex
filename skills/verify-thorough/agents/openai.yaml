@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Thorough"
+  short_description: "Run multi-layer falsification verification"
+  default_prompt: "Perform a strict multi-layer verification with evidence, severity labels, and confidence."

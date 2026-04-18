@@ -25,10 +25,15 @@ Act as the auditor for implementation review.
 6. Go or No-Go rule:
    1. Any open `P0` or `P1` -> `No-Go`
    2. `P2` only -> conditional `Go` with tracked follow-up
+   3. Principles check not passed -> `No-Go`
 7. Ensure tests include:
    1. Happy path
    2. Edge case
    3. Regression case for changed behavior
+8. Record auditable evidence for:
+   1. `test-results`
+   2. `principles-check`
+   3. findings severity totals
 
 ## Output Contract
 

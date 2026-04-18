@@ -1,0 +1,37 @@
+name: Governance Gates
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Validate Workflow State
+        shell: pwsh
+        run: |
+          pwsh -ExecutionPolicy Bypass -File scripts/workflow-loop.ps1 -Action status -Role orchestrator
+
+      - name: Run Shared Quality Gates
+        shell: pwsh
+        run: |
+          pwsh -ExecutionPolicy Bypass -File scripts/workflow-loop.ps1 -Action run-quality -Role orchestrator
+
+      - name: Enforce No Open P0/P1
+        shell: pwsh
+        run: |
+          pwsh -ExecutionPolicy Bypass -File scripts/workflow-loop.ps1 -Action governance-check -Role orchestrator

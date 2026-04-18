@@ -1,4 +1,4 @@
 interface:
   display_name: "Evaluator"
   short_description: "Run ordered engineering audits as auditor"
-  default_prompt: "Run evaluator mode: read task first, read handover, audit security/functionality-tests/performance-principles, classify P0-P2, and output go/no-go."
+  default_prompt: "Run evaluator mode: read task first, read handover, audit security/functionality-tests/performance-principles, classify P0-P2, enforce principles-check gate, and output go/no-go."

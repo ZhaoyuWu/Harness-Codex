@@ -20,7 +20,8 @@ Persist current phase status to local handover memory.
 4. Tests run and outcomes
 5. Known unresolved risks with impact and mitigation
 6. Known blockers
-7. Next recommended step
+7. Decision (`continue` | `block` | `escalate`)
+8. Next recommended step
 
 ## Output Contract
 
@@ -31,4 +32,5 @@ Return exactly these sections:
 3. Summary Written
 4. Validation Evidence
 5. Unresolved Risks
-6. Follow-up Actions
+6. Decision
+7. Follow-up Actions
